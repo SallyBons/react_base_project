@@ -1,0 +1,345 @@
+/* Navigation CSS */
+.navigation {
+  min-height: 60px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 30px -10px rgba(214, 214, 214, 1);
+  -moz-box-shadow: 0px 0px 30px -10px rgba(214, 214, 214, 1);
+  box-shadow: 0px 0px 30px -10px rgba(214, 214, 214, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding: 0px 15px;
+}
+
+.navigation__homepage a,
+.navigation__buttons a {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  line-height: 16px;
+}
+
+.navigation__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.navigation__buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  line-height: 16px;
+  transition: .3s ease;
+}
+
+.navigation__buttons a.login {
+  color: #000;
+  transition: .3s ease;
+  position: relative;
+  padding: 0px 15px;
+}
+
+.navigation__buttons a.login:hover::after {
+  content: " ";
+  width: calc(100% - 30px);
+  bottom: -5px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+}
+
+.navigation__buttons a.logout {
+  background-color: #E0115F;
+  transition: .3s ease;
+  padding: 15px;
+}
+
+.navigation__buttons a.logout:hover {
+  background-color: #d4105a;
+  cursor: pointer;
+}
+
+.navigation__username {
+  margin-right: 15px;
+}
+
+.main-pagination {
+  padding-top: 30px;
+}
+
+.pagination-items {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.pagination-sides,
+.pagination-presides,
+.pagination-item {
+  border: 1px solid lightgrey;
+  padding: 10px 15px;
+  box-shadow: 0px 2px 10px 0px rgba(207, 207, 207, 0.5);
+  transition: .3s ease;
+}
+
+.pagination-sides:hover,
+.pagination-presides:hover {
+  cursor: pointer;
+  background-color: #f6f6f6;
+}
+
+.pagination-presides {
+  margin: 0px 10px 0px 10px
+}
+
+.pagination-item {
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+  cursor: pointer;
+}
+
+.pagination-item.active {
+   transform: translateY(-5px);
+}
+
+/* Form Styles */
+.form {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.form__headline {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0p
+}
+
+.form form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 50px;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(235, 235, 235, 0.5);
+  -moz-box-shadow: 0px 2px 10px 0px rgba(235, 235, 235, 0.5);
+  box-shadow: 0px 2px 10px 0px rgba(235, 235, 235, 0.5);
+}
+
+.form__input {
+  margin-bottom: 20px;
+}
+
+.form__input div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input div label {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form__input div input,
+.form__input div select {
+  min-height: 40px;
+  padding: 5px 15px 5px 15px;
+  border: 1px solid #efefef;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.form__input div input[type="date"i] {
+  min-height: initial;
+  padding: 15px;
+}
+
+.form__input div input[type="checkbox"i] {
+  margin: 0px;
+  height: 20px;
+  width: 20px;
+}
+
+.form__input div select {
+  min-height: 50px;
+}
+
+.form__input div span {
+  font-weight: 600;
+}
+
+.form__button {
+  padding: 15px;
+  min-height: 40px;
+  background-color: #fff;
+  border: 0px solid transparent;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.form__button--wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__button {
+  transition: .3s ease;
+  background-color: transparent;
+}
+
+.form__button.clear {
+  color: #efefef;
+  border: 1px solid #efefef;
+}
+
+.form__button.clear:hover {
+  color: #d0d0d0;
+  border: 1px solid #d0d0d0;
+  cursor: pointer;
+}
+
+.form__button.send {
+  background-color: #00A86B;
+  font-weight: 600;
+}
+
+.form__button.send:hover {
+  background-color: #03925e;
+  cursor: pointer;
+}
+
+.form.login .form__button--wrapper {
+  justify-content: space-between;
+}
+
+.form.login a.registration {
+  color: #000;
+  border: 1px solid #000;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.form.login a.registration:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.form__input.genres p {
+  text-transform: uppercase;
+  margin-top: 0px;
+  font-weight: 600;
+}
+
+.form__input.genres ul {
+  margin-top: 0px;
+  padding-left: 20px;
+}
+
+.form__input.genres ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.form__input.genres ul li:before {
+  content: '>';
+  position: absolute;
+  left: -15px;
+  /* top: 0px; */
+}
+
+.form__input.genres ul .remove-span {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  font-size: 10px;
+  transition: .3s ease;
+}
+
+.form__input.genres ul .remove-span:hover {
+  background-color: #d4105a;
+  border: 1px solid #d4105a;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form__input div .select-field-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.form__input div .select-field-edit select {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.form__input div .select-field-edit .add-button {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  line-height: 16px;
+  background-color: #00A86B;
+  min-width: 100px;
+  transition: .3s ease;
+  padding: 15px;
+  margin-left: 15px;
+}
+
+.form__input div .select-field-edit .add-button:hover{
+  background-color: #03925e;
+  cursor: pointer;
+}
+
+.form__button--wrapper.edit{
+  justify-content: flex-end;
+}
+
+/* 404 page */
+.not-found-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.not-found-heading {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.not-found-text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 0px;
+  text-transform: uppercase;
+}

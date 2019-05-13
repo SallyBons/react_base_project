@@ -1,0 +1,24 @@
+{
+  "extends": [
+      "airbnb",
+      "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
+  "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+  },
+  "rules": {
+    "object-curly-spacing": ["error", "never"],
+    "no-unused-expressions": ["error", {"allowShortCircuit": true}],
+    "react/jsx-filename-extension": 0,
+    "comma-dangle": 0,
+    "import/no-extraneous-dependencies": 0,
+    "no-shadow": 0,
+    "react/forbid-prop-types": ["error", { "forbid": "any"}],
+    "jsx-a11y/mouse-events-have-key-events": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "linebreak-style": ["error", "windows"]
+  }
+}
